@@ -38,6 +38,18 @@ public class TestRunner {
 		
 		System.out.println("String of Traders' names");
 		System.out.println(TransactionUtility.allTradersNames(transactions));
+		
+		System.out.println();
+		System.out.println("Are there any Traders in Milan? " + TransactionUtility.anyTradersInMilan(transactions));
+		
+		System.out.println();
+		TransactionUtility.printAllTransactionValuesFromCambridge(transactions);
+		
+		System.out.println();
+		System.out.println("Highest transaction value: " + TransactionUtility.getHighestTransactionValue(transactions));
+		
+		System.out.println();
+		System.out.println("Lowest transaction value: " + TransactionUtility.getLowestTransactionValue(transactions));
 	}
 
 }
