@@ -10,8 +10,9 @@ public class primeUtility {
 				.noneMatch(i -> candidate % i == 0);
 	}
 	
-	public static List<Integer> getListOfPrimes(int rangeLow, int rangeHigh){
-		
-		IntStream.range(rangeLow, rangeHigh).filter(i->)
-	}
+	//TODO
+//	public static List<Integer> getListOfPrimes(int rangeLow, int rangeHigh){
+//		
+//		IntStream.range(rangeLow, rangeHigh).filter(i->)
+//	}
 }
