@@ -36,9 +36,11 @@ public class primeUtility {
 		return list;
 	}
 	
-	//TODO
-//	public static List<Integer> getListOfPrimes(int rangeLow, int rangeHigh){
-//		
-//		IntStream.range(rangeLow, rangeHigh).filter(i->)
-//	}
+	public static boolean isPrime(List<Integer> primes, int candidate){
+		int candidateRoot = (int) Math.sqrt((double) candidate);
+		return takeWhile(primes, i -> i <= candidateRoot)
+				.stream()
+				.noneMatch(p -> candidate % p == 0);
+	}
+	
 }
