@@ -43,4 +43,9 @@ public class primeUtility {
 				.noneMatch(p -> candidate % p == 0);
 	}
 	
+	public static Map<Boolean, List<Integer>> partitionPrimesWithCustomCollector(int n){
+		return IntStream.rangeClosed(2, n).boxed()
+				.collect(new PrimeNumbersCollector());
+	}
+	
 }
