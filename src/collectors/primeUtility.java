@@ -16,7 +16,7 @@ public class primeUtility {
 	
 	public static Map<Boolean, List<Integer>> partitionPrimes(int n) {
 		return IntStream.rangeClosed(2, n).boxed()
-				.collect(partitioningBy(candidate -> isPrime(candidate)));
+				.collect(partitioningBy(candidate -> isPrimeImproved(candidate)));
 	}
 	
 	public static boolean isPrimeImproved(int candidate){
